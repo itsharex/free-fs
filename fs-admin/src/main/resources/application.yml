@@ -1,15 +1,10 @@
 server:
   port: 8080
-  undertow:
-    threads:
-      io: 8
-      # 它的值设置取决于系统线程执行任务的阻塞系数，默认值是IO线程数*8
-      worker: 256
-    buffer-size: 1024
-    # 是否分配的直接内存(NIO直接分配的堆外内存)
-    direct-buffers: true
-    # 允许非标准 HTTP 方法
-    allow-unescaped-characters-in-url: true
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+    # 连接数满后的排队数，默认为100
+    accept-count: 1000
 spring:
   application:
     name: free-fs

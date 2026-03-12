@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 /**
  * Web 配置
  *
- * @Author: hao.ding@insentek.com
+ * @Author: xddcode
  * @Date: 2024/11/18 13:53
  */
 @Configuration
